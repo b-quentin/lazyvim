@@ -30,16 +30,17 @@ return {
       -- nécessaire pour recharger quand opencode modifie un fichier
       vim.o.autoread = true
 
-      -- 🧠 Keymaps conseillés
-      vim.keymap.set({ "n", "x" }, "<C-a>", function()
+      -- 🧠 Keymaps unifiés avec LazyVim (<leader>ao prefix)
+      -- Évite les conflits avec ClaudeCode (ac, af, ar, aC, ab, as, aa, ad)
+      vim.keymap.set({ "n", "x" }, "<leader>ao", function()
         require("opencode").ask("@this: ", { submit = true })
       end, { desc = "Ask opencode" })
 
-      vim.keymap.set({ "n", "x" }, "<C-x>", function()
+      vim.keymap.set({ "n", "x" }, "<leader>aO", function()
         require("opencode").select()
       end, { desc = "Open opencode selector" })
 
-      vim.keymap.set({ "n", "t" }, "<C-.>", function()
+      vim.keymap.set({ "n", "t" }, "<leader>at", function()
         require("opencode").toggle()
       end, { desc = "Toggle opencode panel" })
     end,
