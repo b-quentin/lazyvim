@@ -8,7 +8,7 @@ return {
 
   opts = {
     strategy = "toggleterm",
-    templates = { "builtin" },
+    templates = { "builtin", "user.nushell" },
   },
 
   keys = {

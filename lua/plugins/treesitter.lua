@@ -4,6 +4,11 @@ return {
     opts = {
       ensure_installed = {
         "v",
+        "nu",
+        "css",
+        "html",
+        "json",
+        "json5",
       },
     },
   },
