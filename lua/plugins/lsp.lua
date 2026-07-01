@@ -33,6 +33,41 @@ return {
             json = {
               validate = {
                 enable = true,
+        helm_ls = {},
+
+        -- === NUSHELL ===
+        nushell = {
+          cmd = { "nu", "--lsp" },
+          filetypes = { "nu" },
+        },
+
+        -- === YAML ===
+        yamlls = {
+          settings = {
+            yaml = {
+              keyOrdering = false,
+            },
+          },
+        },
+        -- === ANSIBLE LSP ===
+        ansiblels = {
+          filetypes = {
+            "yaml.ansible",
+            "ansible",
+          },
+          settings = {
+            ansible = {
+              ansible = {
+                path = "ansible",
+              },
+              executionEnvironment = {
+                enabled = false,
+              },
+              validation = {
+                enabled = true,
+                lint = {
+                  enabled = true,
+                },
               },
             },
           },
