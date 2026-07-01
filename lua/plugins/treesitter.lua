@@ -9,6 +9,7 @@ return {
         "html",
         "json",
         "json5",
+        "jsonnet",
         "helm",
         "yaml",
         "jinja",

@@ -12,7 +12,6 @@ return {
           },
         },
         v_analyzer = {},
-        nushell = {},
         emmet_language_server = {
           filetypes = { "html", "css", "typescriptreact", "javascriptreact" },
         },
@@ -33,6 +32,11 @@ return {
             json = {
               validate = {
                 enable = true,
+              },
+            },
+          },
+        },
+        jsonnet_ls = {},
         helm_ls = {},
 
         -- === NUSHELL ===
