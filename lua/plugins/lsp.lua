@@ -36,7 +36,11 @@ return {
             },
           },
         },
-        jsonnet_ls = {},
+        jsonnet_ls = {
+          settings = {
+            jpath = { "vendor" },
+          },
+        },
         helm_ls = {},
 
         -- === NUSHELL ===
