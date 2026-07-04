@@ -38,7 +38,7 @@ return {
         },
         jsonnet_ls = {
           settings = {
-            jpath = { "vendor" },
+            jpath = { "vendor", "lib" },
           },
         },
         helm_ls = {},
