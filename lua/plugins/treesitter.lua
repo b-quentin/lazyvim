@@ -13,6 +13,7 @@ return {
         "helm",
         "yaml",
         "jinja",
+        "templ",
       },
     },
   },

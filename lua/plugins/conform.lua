@@ -8,6 +8,7 @@ return {
     formatters_by_ft = {
       go = { "gofmt" },
       jsonnet = { "jsonnetfmt" },
+      templ = { "templ" },
     },
   },
 }
