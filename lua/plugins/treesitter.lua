@@ -14,6 +14,7 @@ return {
         "yaml",
         "jinja",
         "templ",
+        "rust",
       },
     },
   },
